@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(0, 0, 0);
+
+
+    header{
+        background-color: rgb(168, 51, 51);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+
+        .navbar.navbar-expand-lg.bg-body-tertiary{
+            background-color: rgb(168, 51, 51);
+        
+            .container-fluid{
+                background-color: rgb(168, 51, 51);
+                width: 100%;
+                .navbar-brand{
+                    margin-left: 10px;
+                    font-family: 'Bebas Neue', sans-serif;
+                    font-size: 35px;
+                    font-weight: bold;
+                    color: rgb(225, 225, 225);
+                        &:hover{
+                            color: rgb(0, 0, 0);
+                            border-radius: 20px;
+                            font-weight: bold;
+                        }
+                }
+
+                button{
+                    background-color: rgb(225, 225, 225);
+                    .navbar-toggler-icon{
+                        color: rgb(225, 225, 225);
+                    }
+                }
+             
+
+                .link-logo{
+                    img{
+                        margin-left: 10px;
+                        width: 80px;
+                        height: 80px
+                    }
+                }
+                .collapse.navbar-collapse{
+                    color: rgb(225, 225, 225);
+
+                    .nav-item{
+                        .nav-link{
+                            font-size: 16px;
+                            font-weight: bold;
+                            color: rgb(225, 225, 225);
+                            margin-left: 20px;
+                                &:hover{
+                                    color: rgb(0, 0, 0);
+                                    border-radius: 20px;
+                                    font-weight: bold;
+                                }
+                            
+                            span{
+                                background-color: black;
+                                padding: 2spx;
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

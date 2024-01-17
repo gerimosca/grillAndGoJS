@@ -1,0 +1,2894 @@
+/* PAGINA PEDIDO RESPONSIVE */
+/* PAGINA PEDIDO RESPONSIVE */
+/* PAGINA PEDIDO RESPONSIVE */
+
+@media screen and (max-width: 1680px) {   
+
+    .contenedor-pedidos{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "hamburguesa1   hamburguesa2    hamburguesa3"
+        "hamburguesa4   hamburguesa5    hamburguesa6"
+        "hamburguesa7   hamburguesa8    hamburguesa9";
+        img{
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            margin: 5px;
+    
+        }
+    }
+    
+    
+    
+    .mas-pedidos{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+    
+    .name-compania{
+        font-size: 30px;
+        width: 150px;
+        margin-left: 10px;
+    }
+
+    .link-logo{
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    } 
+
+    
+
+    .text-pedido{
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 400px;
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 1300px) {   
+
+    .mas-pedidos{
+        margin: 20px auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-family: 'Permanent Marker', cursive;
+        color: $titlecolor;
+        font-weight: bold;
+        font-size: 40px;
+        letter-spacing: 4px;
+        text-align: center;
+        width: 1100px;
+    }
+
+    .contenedor-pedidos{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "hamburguesa1   hamburguesa2    hamburguesa3"   "hamburguesa4    hamburguesa5    hamburguesa6"
+        "hamburguesa7   hamburguesa8    hamburguesa9";
+
+        img{
+            width: 350px;
+            height: auto;
+            border-radius: 10px;
+        }
+    
+        .hamburguesa1{
+            grid-area: hamburguesa1;
+        }
+        .hamburguesa2{
+            grid-area: hamburguesa2;
+        }
+        .hamburguesa3{
+            grid-area: hamburguesa3;
+        }
+        .hamburguesa4{
+            grid-area: hamburguesa4;
+        }
+        .hamburguesa5{
+            grid-area: hamburguesa5;
+        }
+        .hamburguesa6{
+            grid-area: hamburguesa6;
+        }
+        .hamburguesa7{
+            grid-area: hamburguesa7;
+        }
+        .hamburguesa8{
+            grid-area: hamburguesa8;
+        }
+        .hamburguesa9{
+            grid-area: hamburguesa9;
+        }
+    
+        .hamburguesa1,
+        .hamburguesa2,
+        .hamburguesa3,
+        .hamburguesa4,
+        .hamburguesa5,
+        .hamburguesa6,
+        .hamburguesa7,
+        .hamburguesa8,
+        .hamburguesa9{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            width: 100%;
+    
+            .text-pedido{
+                color: white;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 350px;
+                font-size: 15px;
+            }
+    
+            .titulo-pedido{
+                color: $titlecolor;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    
+    }
+
+}
+
+
+@media screen and (max-width: 1100px) {   
+
+    .mas-pedidos{
+        margin: 20px auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-family: 'Permanent Marker', cursive;
+        color: $titlecolor;
+        font-weight: bold;
+        font-size: 35px;
+        letter-spacing: 4px;
+        text-align: center;
+        width: 800px;
+    }
+
+    .contenedor-pedidos{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "hamburguesa1   hamburguesa2    hamburguesa3"   "hamburguesa4    hamburguesa5    hamburguesa6"
+        "hamburguesa7   hamburguesa8    hamburguesa9";
+
+        img{
+            width: 280px;
+            height: auto;
+            border-radius: 10px;
+        }
+    
+        .hamburguesa1{
+            grid-area: hamburguesa1;
+        }
+        .hamburguesa2{
+            grid-area: hamburguesa2;
+        }
+        .hamburguesa3{
+            grid-area: hamburguesa3;
+        }
+        .hamburguesa4{
+            grid-area: hamburguesa4;
+        }
+        .hamburguesa5{
+            grid-area: hamburguesa5;
+        }
+        .hamburguesa6{
+            grid-area: hamburguesa6;
+        }
+        .hamburguesa7{
+            grid-area: hamburguesa7;
+        }
+        .hamburguesa8{
+            grid-area: hamburguesa8;
+        }
+        .hamburguesa9{
+            grid-area: hamburguesa9;
+        }
+    
+        .hamburguesa1,
+        .hamburguesa2,
+        .hamburguesa3,
+        .hamburguesa4,
+        .hamburguesa5,
+        .hamburguesa6,
+        .hamburguesa7,
+        .hamburguesa8,
+        .hamburguesa9{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            width: 100%;
+    
+            .text-pedido{
+                color: white;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 280px;
+                font-size: 15px;
+            }
+    
+            .titulo-pedido{
+                color: $titlecolor;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    
+    }
+
+}
+
+@media screen and (max-width: 880px) {   
+
+    .mas-pedidos{
+        margin: 20px auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-family: 'Permanent Marker', cursive;
+        color: $titlecolor;
+        font-weight: bold;
+        font-size: 35px;
+        letter-spacing: 4px;
+        text-align: center;
+        width: 800px;
+    }
+
+    .contenedor-pedidos{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "hamburguesa1   hamburguesa2    hamburguesa3"   "hamburguesa4    hamburguesa5    hamburguesa6"
+        "hamburguesa7   hamburguesa8    hamburguesa9";
+
+        img{
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+    
+        .hamburguesa1{
+            grid-area: hamburguesa1;
+        }
+        .hamburguesa2{
+            grid-area: hamburguesa2;
+        }
+        .hamburguesa3{
+            grid-area: hamburguesa3;
+        }
+        .hamburguesa4{
+            grid-area: hamburguesa4;
+        }
+        .hamburguesa5{
+            grid-area: hamburguesa5;
+        }
+        .hamburguesa6{
+            grid-area: hamburguesa6;
+        }
+        .hamburguesa7{
+            grid-area: hamburguesa7;
+        }
+        .hamburguesa8{
+            grid-area: hamburguesa8;
+        }
+        .hamburguesa9{
+            grid-area: hamburguesa9;
+        }
+    
+        .hamburguesa1,
+        .hamburguesa2,
+        .hamburguesa3,
+        .hamburguesa4,
+        .hamburguesa5,
+        .hamburguesa6,
+        .hamburguesa7,
+        .hamburguesa8,
+        .hamburguesa9{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            width: 100%;
+    
+            .text-pedido{
+                color: white;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 250px;
+            }
+    
+            .titulo-pedido{
+                color: $titlecolor;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    
+    }
+}
+
+
+@media screen and (max-width: 800px) {   
+
+    .mas-pedidos{
+        margin: 20px auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-family: 'Permanent Marker', cursive;
+        color: $titlecolor;
+        font-weight: bold;
+        font-size: 30px;
+        letter-spacing: 4px;
+        text-align: center;
+        width: 580px;
+    }
+
+    .contenedor-pedidos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "hamburguesa1   hamburguesa2"
+        "hamburguesa3   hamburguesa4"
+        "hamburguesa5   hamburguesa6"
+        "hamburguesa7   hamburguesa8"
+        "hamburguesa9   hamburguesa9";
+
+        img{
+            width: 320px;
+            height: auto;
+            border-radius: 10px;
+        }
+    
+        .hamburguesa1{
+            grid-area: hamburguesa1;
+        }
+        .hamburguesa2{
+            grid-area: hamburguesa2;
+        }
+        .hamburguesa3{
+            grid-area: hamburguesa3;
+        }
+        .hamburguesa4{
+            grid-area: hamburguesa4;
+        }
+        .hamburguesa5{
+            grid-area: hamburguesa5;
+        }
+        .hamburguesa6{
+            grid-area: hamburguesa6;
+        }
+        .hamburguesa7{
+            grid-area: hamburguesa7;
+        }
+        .hamburguesa8{
+            grid-area: hamburguesa8;
+        }
+        .hamburguesa9{
+            grid-area: hamburguesa9;
+        }
+    
+        .hamburguesa1,
+        .hamburguesa2,
+        .hamburguesa3,
+        .hamburguesa4,
+        .hamburguesa5,
+        .hamburguesa6,
+        .hamburguesa7,
+        .hamburguesa8,
+        .hamburguesa9{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            width: 100%;
+    
+            .text-pedido{
+                color: white;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 330px;
+            }
+    
+            .titulo-pedido{
+                color: $titlecolor;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    
+    }
+}
+
+@media screen and (max-width: 660px) {
+    
+    .mas-pedidos{
+        margin: 20px auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-family: 'Permanent Marker', cursive;
+        color: $titlecolor;
+        font-weight: bold;
+        font-size: 30px;
+        letter-spacing: 4px;
+        text-align: center;
+        width: 580px;
+    }
+
+    .contenedor-pedidos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "hamburguesa1   hamburguesa2"
+        "hamburguesa3   hamburguesa4"
+        "hamburguesa5   hamburguesa6"
+        "hamburguesa7   hamburguesa8"
+        "hamburguesa9   hamburguesa9";
+
+        img{
+            width: 290px;
+            height: auto;
+            border-radius: 10px;
+        }
+    
+        .hamburguesa1{
+            grid-area: hamburguesa1;
+        }
+        .hamburguesa2{
+            grid-area: hamburguesa2;
+        }
+        .hamburguesa3{
+            grid-area: hamburguesa3;
+        }
+        .hamburguesa4{
+            grid-area: hamburguesa4;
+        }
+        .hamburguesa5{
+            grid-area: hamburguesa5;
+        }
+        .hamburguesa6{
+            grid-area: hamburguesa6;
+        }
+        .hamburguesa7{
+            grid-area: hamburguesa7;
+        }
+        .hamburguesa8{
+            grid-area: hamburguesa8;
+        }
+        .hamburguesa9{
+            grid-area: hamburguesa9;
+        }
+    
+        .hamburguesa1,
+        .hamburguesa2,
+        .hamburguesa3,
+        .hamburguesa4,
+        .hamburguesa5,
+        .hamburguesa6,
+        .hamburguesa7,
+        .hamburguesa8,
+        .hamburguesa9{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            width: 100%;
+    
+            .text-pedido{
+                color: white;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 300px;
+            }
+    
+            .titulo-pedido{
+                color: $titlecolor;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .mas-pedidos{
+        margin: 20px auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-family: 'Permanent Marker', cursive;
+        color: $titlecolor;
+        font-weight: bold;
+        font-size: 25px;
+        letter-spacing: 4px;
+        text-align: center;
+        width: 460px;
+    }
+
+    .contenedor-pedidos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "hamburguesa1"
+        "hamburguesa2"
+        "hamburguesa3"
+        "hamburguesa4"
+        "hamburguesa5"
+        "hamburguesa6"
+        "hamburguesa7"
+        "hamburguesa8"
+        "hamburguesa9";
+    
+        
+        img{
+            width: 460px;
+            height: auto;
+            border-radius: 10px;
+        }
+    
+        .hamburguesa1{
+            grid-area: hamburguesa1;
+        }
+        .hamburguesa2{
+            grid-area: hamburguesa2;
+        }
+        .hamburguesa3{
+            grid-area: hamburguesa3;
+        }
+        .hamburguesa4{
+            grid-area: hamburguesa4;
+        }
+        .hamburguesa5{
+            grid-area: hamburguesa5;
+        }
+        .hamburguesa6{
+            grid-area: hamburguesa6;
+        }
+        .hamburguesa7{
+            grid-area: hamburguesa7;
+        }
+        .hamburguesa8{
+            grid-area: hamburguesa8;
+        }
+        .hamburguesa9{
+            grid-area: hamburguesa9;
+        }
+    
+        .hamburguesa1,
+        .hamburguesa2,
+        .hamburguesa3,
+        .hamburguesa4,
+        .hamburguesa5,
+        .hamburguesa6,
+        .hamburguesa7,
+        .hamburguesa8,
+        .hamburguesa9{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            width: 100%;
+    
+            .text-pedido{
+                color: white;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 460px;
+            }
+    
+            .titulo-pedido{
+                color: $titlecolor;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    
+    }
+}
+    
+
+@media screen and (max-width: 480px) {   
+
+    .mas-pedidos{
+        margin: 20px auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-family: 'Permanent Marker', cursive;
+        color: $titlecolor;
+        font-weight: bold;
+        font-size: 25px;
+        letter-spacing: 4px;
+        text-align: center;
+        width: 390px;
+    }
+
+    .contenedor-pedidos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "hamburguesa1"
+        "hamburguesa2"
+        "hamburguesa3"
+        "hamburguesa4"
+        "hamburguesa5"
+        "hamburguesa6"
+        "hamburguesa7"
+        "hamburguesa8"
+        "hamburguesa9";
+    
+        
+        img{
+            width: 390px;
+            height: auto;
+            border-radius: 10px;
+        }
+    
+        .hamburguesa1{
+            grid-area: hamburguesa1;
+        }
+        .hamburguesa2{
+            grid-area: hamburguesa2;
+        }
+        .hamburguesa3{
+            grid-area: hamburguesa3;
+        }
+        .hamburguesa4{
+            grid-area: hamburguesa4;
+        }
+        .hamburguesa5{
+            grid-area: hamburguesa5;
+        }
+        .hamburguesa6{
+            grid-area: hamburguesa6;
+        }
+        .hamburguesa7{
+            grid-area: hamburguesa7;
+        }
+        .hamburguesa8{
+            grid-area: hamburguesa8;
+        }
+        .hamburguesa9{
+            grid-area: hamburguesa9;
+        }
+    
+        .hamburguesa1,
+        .hamburguesa2,
+        .hamburguesa3,
+        .hamburguesa4,
+        .hamburguesa5,
+        .hamburguesa6,
+        .hamburguesa7,
+        .hamburguesa8,
+        .hamburguesa9{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            width: 100%;
+    
+            .text-pedido{
+                color: white;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 390px;
+            }
+    
+            .titulo-pedido{
+                color: $titlecolor;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    
+    }
+}
+
+@media screen and (max-width: 400px) {   
+
+    .mas-pedidos{
+        margin: 20px auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-family: 'Permanent Marker', cursive;
+        color: $titlecolor;
+        font-weight: bold;
+        font-size: 25px;
+        letter-spacing: 4px;
+        text-align: center;
+        width: 310px;
+    }
+
+    .contenedor-pedidos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "hamburguesa1"
+        "hamburguesa2"
+        "hamburguesa3"
+        "hamburguesa4"
+        "hamburguesa5"
+        "hamburguesa6"
+        "hamburguesa7"
+        "hamburguesa8"
+        "hamburguesa9";
+    
+        
+        img{
+            width: 310px;
+            height: auto;
+            border-radius: 10px;
+        }
+    
+        .hamburguesa1{
+            grid-area: hamburguesa1;
+        }
+        .hamburguesa2{
+            grid-area: hamburguesa2;
+        }
+        .hamburguesa3{
+            grid-area: hamburguesa3;
+        }
+        .hamburguesa4{
+            grid-area: hamburguesa4;
+        }
+        .hamburguesa5{
+            grid-area: hamburguesa5;
+        }
+        .hamburguesa6{
+            grid-area: hamburguesa6;
+        }
+        .hamburguesa7{
+            grid-area: hamburguesa7;
+        }
+        .hamburguesa8{
+            grid-area: hamburguesa8;
+        }
+        .hamburguesa9{
+            grid-area: hamburguesa9;
+        }
+    
+        .hamburguesa1,
+        .hamburguesa2,
+        .hamburguesa3,
+        .hamburguesa4,
+        .hamburguesa5,
+        .hamburguesa6,
+        .hamburguesa7,
+        .hamburguesa8,
+        .hamburguesa9{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            width: 100%;
+    
+            .text-pedido{
+                color: white;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 310px;
+            }
+    
+            .titulo-pedido{
+                color: $titlecolor;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .mas-pedidos{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-family: 'Permanent Marker', cursive;
+        color: $titlecolor;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 4px;
+        text-align: center;
+        width: 300px;
+    }
+
+    .contenedor-pedidos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "hamburguesa1"
+        "hamburguesa2"
+        "hamburguesa3"
+        "hamburguesa4"
+        "hamburguesa5"
+        "hamburguesa6"
+        "hamburguesa7"
+        "hamburguesa8"
+        "hamburguesa9";
+    
+        
+        img{
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+    
+        .hamburguesa1{
+            grid-area: hamburguesa1;
+        }
+        .hamburguesa2{
+            grid-area: hamburguesa2;
+        }
+        .hamburguesa3{
+            grid-area: hamburguesa3;
+        }
+        .hamburguesa4{
+            grid-area: hamburguesa4;
+        }
+        .hamburguesa5{
+            grid-area: hamburguesa5;
+        }
+        .hamburguesa6{
+            grid-area: hamburguesa6;
+        }
+        .hamburguesa7{
+            grid-area: hamburguesa7;
+        }
+        .hamburguesa8{
+            grid-area: hamburguesa8;
+        }
+        .hamburguesa9{
+            grid-area: hamburguesa9;
+        }
+    
+        .hamburguesa1,
+        .hamburguesa2,
+        .hamburguesa3,
+        .hamburguesa4,
+        .hamburguesa5,
+        .hamburguesa6,
+        .hamburguesa7,
+        .hamburguesa8,
+        .hamburguesa9{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            width: 100%;
+    
+            .text-pedido{
+                color: white;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 300px;
+            }
+    
+            .titulo-pedido{
+                color: $titlecolor;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    
+    }
+}
+
+/* PAGINA NUESTRA CARTA RESPONSIVE*/
+/* PAGINA NUESTRA CARTA RESPONSIVE*/
+/* PAGINA NUESTRA CARTA RESPONSIVE*/
+
+@media screen and (max-width: 1024px) {           
+    .carousel-inner img{
+        width: 650px;
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 768px) {      
+    .carousel-inner img{
+        width: 460px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {     
+    .carousel-inner img{
+        width: 300px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 320px) {      
+    .carousel-inner img{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+
+/* PAGINA INDEX RESPONSIVE */
+/* PAGINA INDEX RESPONSIVE */
+/* PAGINA INDEX RESPONSIVE */
+
+@media screen and (max-width: 1300px) {
+
+    .contenedor-principal{
+
+        .principal-1{
+            display: flex;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+    
+            h1{
+                font-family: 'Permanent Marker', cursive;
+                color: $titlecolor;
+                font-weight: bold;
+                font-size: 35px;
+                letter-spacing: 4px;
+                text-align: center;
+                width: auto;
+                margin: 10px 10px;
+                justify-content: center;
+            }
+    
+            img{
+                width: 790px;
+                height: 420px;
+                margin: 30px 5px;
+                margin-bottom: 60px;
+            }
+        }
+    
+        .principal-2{
+            display: flex;
+            align-items: center;
+            
+            img {
+                width: 600px;
+                height: 800px;
+                margin: 10px;
+            }
+    
+            .principal-2-1{
+                p,
+                h2{
+                    width: 500px;
+                    margin: 10px 10px;
+                    text-align: center;
+                    justify-content: center;
+                }
+    
+                p{
+                    color: white;
+                    font-size: 14px;
+                }
+    
+                h2{
+                    font-family: 'Permanent Marker', cursive;
+                    color: $titlecolor;
+                    font-weight: bold;
+                    font-size: 35px;
+                    letter-spacing: 4px;
+                }
+            }   
+        }
+    
+        .img-reserva-main {
+            width: 90%;
+            margin: 30px auto;
+            border-style: solid;
+            border-width: 5px;
+            border-color: rgb(237, 217, 0);
+            border-radius: 50px;
+    
+            &:hover{
+                background-color: rgb(211, 195, 20);
+            }
+    
+                .link-img-reserva-main {
+                    text-decoration: none;
+                    
+                    .titulo-reserva-main{
+                        color: rgb(255, 255, 255);
+                        font-weight: bold;
+                        font-size: 30px;
+                        letter-spacing: 4px;
+                        text-align: center;
+                        padding: 40px 30px;
+                        border-radius: 25px;
+                        font-family: 'Permanent Marker', cursive;
+                    }
+                }
+        }
+    
+        .iframe-maps{
+            background-color: rgb(0, 0, 0);
+    
+            iframe{
+                display: flex;
+                align-items: center;
+                margin: 30px auto;
+                width: 90%;
+                height: 400px;
+                border-radius: 50px;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 1100px) {
+
+    .contenedor-principal{
+
+        .principal-1{
+            display: flex;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+    
+            h1{
+                font-family: 'Permanent Marker', cursive;
+                color: $titlecolor;
+                font-weight: bold;
+                font-size: 35px;
+                letter-spacing: 4px;
+                text-align: center;
+                width: auto;
+                margin: 10px 10px;
+                justify-content: center;
+            }
+    
+            img{
+                width: 590px;
+                height: 320px;
+                margin: 30px 5px;
+                margin-bottom: 60px;
+            }
+        }
+    
+        .principal-2{
+            display: flex;
+            align-items: center;
+            
+            img {
+                width: 400px;
+                height: 600px;
+                margin: 10px;
+            }
+    
+            .principal-2-1{
+                p,
+                h2{
+                    width: auto;
+                    margin: 10px 10px;
+                    text-align: center;
+                    justify-content: center;
+                }
+    
+                p{
+                    color: white;
+                    font-size: 14px;
+                }
+    
+                h2{
+                    font-family: 'Permanent Marker', cursive;
+                    color: $titlecolor;
+                    font-weight: bold;
+                    font-size: 35px;
+                    letter-spacing: 4px;
+                }
+            }   
+        }
+    
+        .img-reserva-main {
+            width: 90%;
+            margin: 30px auto;
+            border-style: solid;
+            border-width: 5px;
+            border-color: rgb(237, 217, 0);
+            border-radius: 50px;
+    
+            &:hover{
+                background-color: rgb(211, 195, 20);
+            }
+    
+                .link-img-reserva-main {
+                    text-decoration: none;
+                    
+                    .titulo-reserva-main{
+                        color: rgb(255, 255, 255);
+                        font-weight: bold;
+                        font-size: 30px;
+                        letter-spacing: 4px;
+                        text-align: center;
+                        padding: 40px 30px;
+                        border-radius: 25px;
+                        font-family: 'Permanent Marker', cursive;
+                    }
+                }
+        }
+    
+        .iframe-maps{
+            background-color: rgb(0, 0, 0);
+    
+            iframe{
+                display: flex;
+                align-items: center;
+                margin: 30px auto;
+                width: 90%;
+                height: 400px;
+                border-radius: 50px;
+            }
+        }
+    }
+
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .contenedor-principal{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1fr 1fr 0.6fr;
+        grid-template-areas: 
+        "principal-1"
+        "principal-2"
+        "img-reserva-main"
+        "iframe-maps";
+    
+    
+        .principal-1{
+            grid-area: principal-1;
+        }
+        
+        .principal-2{
+            grid-area: principal-2;
+        }
+        
+        .img-reserva-main{
+            grid-area: img-reserva-main;
+        }
+        
+        .iframe-maps{
+            grid-area: iframe-maps;
+        }
+        
+        .principal-1,
+        .principal-2,
+        .img-reserva-main,
+        .iframe-maps{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .titulo-container{
+            text-align: center;
+            margin: 5px auto;
+        }
+        
+        .principal-1{
+            height: 450px;
+            width: 580px;
+            margin: 10px auto;
+            justify-content: center;
+
+            img{
+                width: 680px;
+                height: 350px;
+                margin: 10px auto;
+                justify-content: center;
+            }
+            h1{
+                width: 580px;
+                font-size: 31px;
+                letter-spacing: 4px;
+                margin: auto;
+                text-align: center;
+            }
+        }
+
+        .principal-2{
+            height: 550px;
+            width: 600px;
+            margin: 10px auto;
+            justify-content: center;
+            margin-bottom: 0px;
+
+            img{
+                width: 500px;
+                height: 720px;
+                margin: 10px auto;
+                justify-content: center;
+            }
+
+            .principal-2-1{
+                height: 550px;
+                width: 680px;
+                margin-top: 40px;
+                margin: 10px auto;
+                justify-content: center;
+                h2{
+                    font-size: 31px;
+                    margin: 5px auto;
+                    letter-spacing: 4px;
+                    text-align: center;
+                }
+                .text1{
+                    font-size: 14px;
+                    width: 680px;
+                    margin: 10px auto;
+                    text-align: center;
+                }
+            }
+        }
+               
+        .img-reserva-main{
+            width: 90%;
+            margin: 10px auto;
+            margin-top: 450px;
+            justify-content: center;
+            height: 200px;
+
+            .link-img-reserva-main{
+                justify-content: center;
+                border-width: 3px;
+                border-radius: 20px;
+                height: 100px;
+
+
+                .titulo-reserva-main{
+                    font-size: 20px;
+                    justify-content: center;
+                    letter-spacing: 4px;
+                    text-align: center;
+                    border-radius: 10px;
+                }
+
+            }
+            
+        }
+    
+        .iframe-maps{
+            width: 90%;
+            margin: 10px auto;
+            justify-content: center;
+
+            iframe{
+                width: 90%;
+                width: 686px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .contenedor-principal{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1fr 1fr 0.6fr;
+        grid-template-areas: 
+        "principal-1"
+        "principal-2"
+        "img-reserva-main"
+        "iframe-maps";
+    
+    
+        .principal-1{
+            grid-area: principal-1;
+        }
+        
+        .principal-2{
+            grid-area: principal-2;
+        }
+        
+        .img-reserva-main{
+            grid-area: img-reserva-main;
+        }
+        
+        .iframe-maps{
+            grid-area: iframe-maps;
+        }
+        
+        .principal-1,
+        .principal-2,
+        .img-reserva-main,
+        .iframe-maps{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .titulo-container{
+            text-align: center;
+            margin: 5px auto;
+        }
+        
+        .principal-1{
+            height: 450px;
+            width: 580px;
+            margin: 10px auto;
+            justify-content: center;
+
+            img{
+                width: 680px;
+                height: 350px;
+                margin: 10px auto;
+                justify-content: center;
+            }
+            h1{
+                width: 580px;
+                font-size: 31px;
+                letter-spacing: 4px;
+                margin: auto;
+                text-align: center;
+            }
+        }
+
+        .principal-2{
+            height: 550px;
+            width: 600px;
+            margin: 10px auto;
+            justify-content: center;
+            margin-bottom: 0px;
+
+            img{
+                width: 500px;
+                height: 720px;
+                margin: 10px auto;
+                justify-content: center;
+            }
+
+            .principal-2-1{
+                height: 550px;
+                width: 680px;
+                margin-top: 40px;
+                margin: 10px auto;
+                justify-content: center;
+                h2{
+                    font-size: 31px;
+                    margin: 5px auto;
+                    letter-spacing: 4px;
+                    text-align: center;
+                }
+                .text1{
+                    font-size: 14px;
+                    width: 680px;
+                    margin: 10px auto;
+                    text-align: center;
+                }
+            }
+        }
+               
+        .img-reserva-main{
+            width: 90%;
+            margin: 10px auto;
+            margin-top: 450px;
+            justify-content: center;
+            height: 200px;
+
+            .link-img-reserva-main{
+                justify-content: center;
+                border-width: 3px;
+                border-radius: 20px;
+                height: 110px;
+
+
+                .titulo-reserva-main{
+                    font-size: 20px;
+                    margin: 5px;
+                    justify-content: center;
+                    letter-spacing: 4px;
+                    text-align: center;
+                    border-radius: 10px;
+                }
+
+            }
+            
+        }
+    
+        .iframe-maps{
+            width: 90%;
+            margin: 10px auto;
+            justify-content: center;
+
+            iframe{
+                width: 686px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 706px) {
+
+    .contenedor-principal{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1fr 1fr 0.6fr;
+        grid-template-areas: 
+        "principal-1"
+        "principal-2"
+        "img-reserva-main"
+        "iframe-maps";
+    
+    
+        .principal-1{
+            grid-area: principal-1;
+        }
+        
+        .principal-2{
+            grid-area: principal-2;
+        }
+        
+        .img-reserva-main{
+            grid-area: img-reserva-main;
+        }
+        
+        .iframe-maps{
+            grid-area: iframe-maps;
+        }
+        
+        .principal-1,
+        .principal-2,
+        .img-reserva-main,
+        .iframe-maps{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .titulo-container{
+            text-align: center;
+            margin: 5px auto;
+        }
+        
+        .principal-1{
+            height: 450px;
+            width: 580px;
+            margin: 10px auto;
+            justify-content: center;
+
+            img{
+                width: 580px;
+                height: 290px;
+                margin: 10px auto;
+                justify-content: center;
+            }
+            h1{
+                width: 580px;
+                font-size: 31px;
+                letter-spacing: 4px;
+                margin: auto;
+                text-align: center;
+            }
+        }
+
+        .principal-2{
+            height: 550px;
+            width: 290px;
+            margin: 10px auto;
+            justify-content: center;
+            margin-bottom: 0px;
+
+            img{
+                width: 500px;
+                height: 720px;
+                margin: 10px auto;
+                justify-content: center;
+            }
+
+            .principal-2-1{
+                height: 550px;
+                width: 580px;
+                margin-top: 40px;
+                margin: 10px auto;
+                justify-content: center;
+                h2{
+                    font-size: 20px;
+                    margin: 5px auto;
+                    letter-spacing: 4px;
+                    text-align: center;
+                }
+                .text1{
+                    font-size: 14px;
+                    width: 580px;
+                    margin: 10px auto;
+                    text-align: center;
+                }
+            }
+        }
+               
+        .img-reserva-main{
+            width: 90%;
+            margin: 10px auto;
+            margin-top: 450px;
+            justify-content: center;
+            height: 200px;
+
+            .link-img-reserva-main{
+                margin: 30px auto;
+                justify-content: center;
+                border-width: 3px;
+                border-radius: 20px;
+
+
+                .titulo-reserva-main{
+                    font-size: 20px;
+                    margin: 5px;
+                    justify-content: center;
+                    letter-spacing: 4px;
+                    text-align: center;
+                    border-radius: 10px;
+                }
+
+            }
+
+            
+            
+        }
+    
+        .iframe-maps{
+            margin: 10px auto;
+            justify-content: center;
+
+            iframe{
+                width: 580px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .contenedor-principal{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1fr 1fr 0.6fr;
+        grid-template-areas: 
+        "principal-1"
+        "principal-2"
+        "img-reserva-main"
+        "iframe-maps";
+    
+    
+        .principal-1{
+            grid-area: principal-1;
+        }
+        
+        .principal-2{
+            grid-area: principal-2;
+        }
+        
+        .img-reserva-main{
+            grid-area: img-reserva-main;
+        }
+        
+        .iframe-maps{
+            grid-area: iframe-maps;
+        }
+        
+        .principal-1,
+        .principal-2,
+        .img-reserva-main,
+        .iframe-maps{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .titulo-container{
+            text-align: center;
+            margin: 5px auto;
+        }
+        
+        .principal-1{
+            height: 450px;
+            width: 390px;
+            margin: 10px auto;
+            justify-content: center;
+
+            img{
+                width: 390px;
+                height: 220px;
+                margin: 10px auto;
+                justify-content: center;
+            }
+            h1{
+                width: 290px;
+                font-size: 31px;
+                letter-spacing: 4px;
+                margin: auto;
+                text-align: center;
+            }
+        }
+
+        .principal-2{
+            height: 550px;
+            width: 290px;
+            margin: 10px auto;
+            justify-content: center;
+            margin-bottom: 0px;
+
+            img{
+                width: 370px;
+                height: 520px;
+                margin: 10px auto;
+                justify-content: center;
+            }
+
+            .principal-2-1{
+                height: 350px;
+                width: 460px;
+                margin-top: 40px;
+                margin: 10px auto;
+                justify-content: center;
+                h2{
+                    font-size: 20px;
+                    letter-spacing: 4px;
+                    text-align: center;
+                }
+                .text1{
+                    font-size: 13px;
+                    width: 460px;
+                    margin: auto;
+                    text-align: center;
+                }
+            }
+        }
+               
+        .img-reserva-main{
+            width: 90%;
+            margin: 10px auto;
+            margin-top: 350px;
+            justify-content: center;
+            height: 200px;
+
+            .link-img-reserva-main{
+                margin: 30px auto;
+                justify-content: center;
+                border-width: 3px;
+                border-radius: 20px;
+
+
+                .titulo-reserva-main{
+                    font-size: 20px;
+                    margin: 5px;
+                    justify-content: center;
+                    letter-spacing: 4px;
+                    text-align: center;
+                    border-radius: 10px;
+                }
+
+            }
+            
+        }
+    
+        .iframe-maps{
+            margin: 10px auto;
+            justify-content: center;
+
+            iframe{
+                width: 460px;
+                height: 270px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .contenedor-principal{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.3fr 0.3fr 0.6fr;
+        grid-template-areas: 
+        "principal-1"
+        "principal-2"
+        "img-reserva-main"
+        "iframe-maps";
+    
+    
+        .principal-1{
+            grid-area: principal-1;
+        }
+        
+        .principal-2{
+            grid-area: principal-2;
+        }
+        
+        .img-reserva-main{
+            grid-area: img-reserva-main;
+        }
+        
+        .iframe-maps{
+            grid-area: iframe-maps;
+        }
+        
+        .principal-1,
+        .principal-2,
+        .img-reserva-main,
+        .iframe-maps{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .titulo-container{
+            text-align: center;
+            margin: 5px auto;
+        }
+        
+        .principal-1{
+            height: 450px;
+            width: 390px;
+            margin: 10px auto;
+            justify-content: center;
+
+            img{
+                width: 390px;
+                height: 220px;
+                margin: 10px auto;
+                justify-content: center;
+            }
+            h1{
+                width: 290px;
+                font-size: 31px;
+                letter-spacing: 4px;
+                margin: auto;
+                text-align: center;
+            }
+        }
+
+        .principal-2{
+            height: 550px;
+            width: 290px;
+            margin: 10px auto;
+            justify-content: center;
+            margin-bottom: 0px;
+
+            img{
+                width: 370px;
+                height: 520px;
+                margin: 10px auto;
+                justify-content: center;
+            }
+
+            .principal-2-1{
+                height: 350px;
+                width: 390px;
+                margin-top: 40px;
+                margin: 10px auto;
+                justify-content: center;
+                h2{
+                    font-size: 20px;
+                    letter-spacing: 4px;
+                    text-align: center;
+                }
+                .text1{
+                    font-size: 13px;
+                    width: 390px;
+                    margin: auto;
+                    text-align: center;
+                }
+            }
+        }
+               
+        .img-reserva-main{
+            width: 95%;
+            margin: 10px auto;
+            margin-top: 390px;
+            justify-content: center;
+            height: 200px;
+
+            .link-img-reserva-main{
+                margin: 30px auto;
+                justify-content: center;
+                border-width: 3px;
+                border-radius: 20px;
+
+
+                .titulo-reserva-main{
+                    font-size: 20px;
+                    margin: 5px;
+                    justify-content: center;
+                    letter-spacing: 4px;
+                    text-align: center;
+                    border-radius: 10px;
+                }
+
+            
+
+            }
+            
+        }
+    
+        .iframe-maps{
+            margin: 10px auto;
+            justify-content: center;
+
+            iframe{
+                width: 380px;
+                height: 270px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .contenedor-principal{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.3fr 0.3fr 0.6fr;
+        grid-template-areas: 
+        "principal-1"
+        "principal-2"
+        "img-reserva-main"
+        "iframe-maps";
+    
+    
+        .principal-1{
+            grid-area: principal-1;
+        }
+        
+        .principal-2{
+            grid-area: principal-2;
+        }
+        
+        .img-reserva-main{
+            grid-area: img-reserva-main;
+        }
+        
+        .iframe-maps{
+            grid-area: iframe-maps;
+        }
+        
+        .principal-1,
+        .principal-2,
+        .img-reserva-main,
+        .iframe-maps{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .titulo-container{
+            text-align: center;
+            margin: 5px auto;
+        }
+        
+        .principal-1{
+            height: 450px;
+            width: 290px;
+            margin: 10px auto;
+            justify-content: center;
+
+            img{
+                width: 290px;
+                height: 160px;
+                margin: 10px auto;
+                justify-content: center;
+            }
+            h1{
+                width: 290px;
+                font-size: 30px;
+                letter-spacing: 4px;
+                margin: auto;
+                text-align: center;
+            }
+        }
+
+        .principal-2{
+            height: 500px;
+            width: 290px;
+            margin: 10px auto;
+            justify-content: center;
+            margin-bottom: 0px;
+
+            img{
+                width: 290px;
+                height: 420px;
+                margin: 10px auto;
+                justify-content: center;
+            }
+
+            .principal-2-1{
+                height: 350px;
+                width: 310px;
+                margin-top: 40px;
+                margin: 10px auto;
+                justify-content: center;
+                h2{
+                    font-size: 20px;
+                    letter-spacing: 4px;
+                    text-align: center;
+                }
+                .text1{
+                    font-size: 13px;
+                    width: 310px;
+                    margin: auto;
+                    text-align: center;
+                }
+            }
+        }
+               
+        .img-reserva-main{
+            width: 95%;
+            margin: 0px auto;
+            margin-top: 450px;
+            justify-content: center;
+            height: 200px;
+
+            .link-img-reserva-main{
+                justify-content: center;
+                align-items: center;
+                border-width: 3px;
+                border-radius: 20px;
+
+
+                .titulo-reserva-main{
+                    margin: 0px auto;
+                    font-size: 18px;
+                    width: 100%;
+                    justify-content: center;
+                    letter-spacing: 2px;
+                    text-align: center;
+                    border-radius: 10px;
+                }
+
+            }
+            
+        }
+    
+        .iframe-maps{
+            margin: 10px auto;
+            justify-content: center;
+
+            iframe{
+                width: 310px;
+                height: 310px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .contenedor-principal{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.3fr 0.3fr 0.6fr;
+        grid-template-areas: 
+        "principal-1"
+        "principal-2"
+        "img-reserva-main"
+        "iframe-maps";
+    
+    
+        .principal-1{
+            grid-area: principal-1;
+        }
+        
+        .principal-2{
+            grid-area: principal-2;
+        }
+        
+        .img-reserva-main{
+            grid-area: img-reserva-main;
+        }
+        
+        .iframe-maps{
+            grid-area: iframe-maps;
+        }
+        
+        .principal-1,
+        .principal-2,
+        .img-reserva-main,
+        .iframe-maps{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .titulo-container{
+            text-align: center;
+            margin: 5px auto;
+        }
+        
+        .principal-1{
+            height: 450px;
+            width: 290px;
+            margin: 10px auto;
+            justify-content: center;
+
+            img{
+                width: 290px;
+                height: 160px;
+                margin: 10px auto;
+                justify-content: center;
+            }
+            h1{
+                width: 290px;
+                font-size: 30px;
+                letter-spacing: 4px;
+                margin: auto;
+                text-align: center;
+            }
+        }
+
+        .principal-2{
+            height: 500px;
+            width: 290px;
+            margin: 10px auto;
+            justify-content: center;
+            margin-bottom: 0px;
+
+            img{
+                width: 290px;
+                height: 420px;
+                margin: 10px auto;
+                justify-content: center;
+            }
+
+            .principal-2-1{
+                height: 350px;
+                width: 290px;
+                margin-top: 40px;
+                margin: 10px auto;
+                justify-content: center;
+                h2{
+                    display: none;
+                    font-size: 20px;
+                    letter-spacing: 4px;
+                    text-align: center;
+                }
+                .text1{
+                    display: none;
+                }
+            }
+        }
+               
+        .img-reserva-main{
+            margin: 5px auto;
+            justify-content: center;
+            height: 200px;
+
+            a{
+                margin: auto;
+                justify-content: center;
+                border-width: 3px;
+                border-radius: 20px;
+                height: 200px;
+
+
+                .titulo-reserva-main{
+                    font-size: 20px;
+                    margin: 5px;
+                    justify-content: center;
+                    letter-spacing: 4px;
+                    text-align: center;
+                    border-radius: 10px;
+                }
+
+            }
+            
+        }
+    
+        .iframe-maps{
+            margin: 10px auto;
+            justify-content: center;
+
+            iframe{
+                width: 300px;
+                height: 250px;
+            }
+        }
+    }
+}
+
+/* PAGINA CONTACTO RESPONSIVE*/
+/* PAGINA CONTACTO RESPONSIVE*/
+/* PAGINA CONTACTO RESPONSIVE*/
+
+@media screen and (max-width: 1600px){
+    
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.75fr 0.75fr;
+        grid-template-areas: 
+        "formgrid    balmes         diagonal" 
+        "formgrid    barceloneta    tibidabo";
+        margin: 10px 10px;
+    }
+    
+    .contenedor img{
+        max-width: 100%;
+        height: 260px;
+        border-radius: 10px;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .balmes,
+    .diagonal,
+    .barceloneta,
+    .tibidabo{
+        color: white;
+        margin: 5px 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    }
+
+@media screen and (max-width: 1300px){
+    
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.75fr 0.75fr;
+        grid-template-areas: 
+        "formgrid    balmes         diagonal" 
+        "formgrid    barceloneta    tibidabo";
+        margin: 10px 10px;
+    }
+    
+    .contenedor img{
+        max-width: 100%;
+        height: 260px;
+        border-radius: 10px;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .balmes,
+    .diagonal,
+    .barceloneta,
+    .tibidabo{
+        color: white;
+        margin: 5px 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    }
+
+@media screen and (max-width: 1100px){
+    
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.1fr 0.1fr;
+        grid-template-areas: 
+        "formgrid       formgrid" 
+        "balmes         diagonal"
+        "barceloneta    tibidabo";
+        margin: 10px 10px;
+    }
+    
+    .contenedor img{
+        max-width: 100%;
+        height: 280px;
+        border-radius: 10px;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .balmes,
+    .diagonal,
+    .barceloneta,
+    .tibidabo{
+        color: white;
+        margin: 5px 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    }
+
+@media screen and (max-width: 720px){
+    
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.1fr 0.1fr;
+        grid-template-areas: 
+        "formgrid       formgrid" 
+        "balmes         diagonal"
+        "barceloneta    tibidabo";
+        margin: 10px 10px;
+    }
+    
+    .contenedor img{
+        max-width: 100%;
+        height: 220px;
+        border-radius: 10px;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .balmes,
+    .diagonal,
+    .barceloneta,
+    .tibidabo{
+        color: white;
+        margin: 5px 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    }
+
+@media screen and (max-width: 580px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.25fr 0.25fr 0.25fr 0.25fr;
+        grid-template-areas: 
+        "formgrid" 
+        "balmes"
+        "diagonal"
+        "barceloneta"
+        "tibidabo";
+    }
+    
+        img{
+        max-width: 100%;
+        height: auto;
+        margin: 10px auto;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    
+    .balmes,
+    .diagonal,
+    .barceloneta,
+    .tibidabo{
+        color: white;
+        margin: 10px
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+    
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.25fr 0.25fr 0.25fr 0.25fr;
+        grid-template-areas: 
+        "formgrid" 
+        "balmes"
+        "diagonal"
+        "barceloneta"
+        "tibidabo";
+        
+
+        img{
+            max-width: 100%;
+            height: auto;
+            margin: auto;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+    } 
+
+    .balmes,
+    .diagonal,
+    .barceloneta,
+    .tibidabo{
+            color: white;
+            margin: 10px
+    }
+
+}
+
+
+/* PAGINA RESERVAS RESPONSIVE*/
+/* PAGINA RESERVAS RESPONSIVE*/
+/* PAGINA RESERVAS RESPONSIVE*/
+
+@media screen and (max-width: 1300px){
+
+    .contenedor-reservas{
+        display: grid;
+        grid-template-columns: 0.6fr 0.7fr 0.7fr;
+        grid-template-rows: 1fr 0.5fr;
+        grid-template-areas: 
+        "formulario hambur1 hambur2"
+        "formulario hambur3 hambur4";
+    }
+
+
+    .enviar-form {
+        margin: 10px 20px;
+    }
+
+    .intro-form p{
+        display: none;
+    }
+
+    .reservas-1{
+        margin: 20px auto;
+        justify-content: center;
+        font-size: 40px;
+    }
+
+    .hambur1 img{
+        max-width: 100%;
+        height: 350px;
+        margin: 1px 1px;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .hambur2 img{
+        max-width: 100%;
+        height: 350px;
+        margin: 1px 1px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hambur3 img{
+        max-width: 100%;
+        height: 350px;
+        margin: 1px 1px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hambur4 img{
+        max-width: 100%;
+        height: 375px;
+        margin: 1px 1px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hambur1,
+    .hambur2,
+    .hambur3,
+    .hambur4{
+        margin: 10px auto;
+        justify-content: center;
+        align-items: center;
+    }
+   
+}
+
+@media screen and (max-width: 1100px){
+
+    .contenedor-reservas{
+        display: grid;
+        grid-template-columns: 0.7fr 0.65fr 0.65fr;
+        grid-template-rows: 0.5fr 0.5fr;;
+        grid-template-areas: 
+        "formulario hambur1 hambur2"
+        "formulario hambur3 hambur4";
+        justify-content: center;
+        align-items: center;
+
+        .formulario{
+            grid-area: formulario;
+            .intro-form{
+                p{
+                    margin: 20px;
+                    text-align: center;
+                    color: white;
+                }
+            }
+    
+            h2{
+                font-family: 'Permanent Marker', cursive;
+                color: $titlecolor;
+                font-weight: bold;
+                font-size: 40px;
+                letter-spacing: 4px;
+                margin: 20px auto;
+                justify-content: center;
+            } 
+    
+            .enviar-form {
+                margin: 20px;
+    
+                label{
+                    color: $titlecolor;
+                }
+                
+                .form-select{
+                    margin-top: 40px;
+                }
+                
+                button{
+                    margin-top: 40px;
+                }
+            }
+        }
+    
+        .hambur1 img{
+            width: 450px;
+            height: 275px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .hambur2 img{
+            width: 450px;
+            height: 275px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hambur3 img{
+            width: 450px;
+            height: 325px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hambur4 img{
+            width: 450px;
+            height: 325px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hambur1,
+        .hambur2,
+        .hambur3,
+        .hambur4{
+            margin: 10px auto;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+   
+}
+
+
+@media screen and (max-width: 900px){
+
+    .contenedor-reservas{
+        display: grid;
+        grid-template-columns: 0.7fr 0.65fr 0.65fr;
+        grid-template-rows: 0.5fr 0.5fr;;
+        grid-template-areas: 
+        "formulario hambur1 hambur2"
+        "formulario hambur3 hambur4";
+        justify-content: center;
+        align-items: center;
+
+        .formulario{
+            grid-area: formulario;
+            .intro-form{
+                p{
+                    margin: 20px;
+                    text-align: center;
+                    color: white;
+                }
+            }
+    
+            h2{
+                font-family: 'Permanent Marker', cursive;
+                color: $titlecolor;
+                font-weight: bold;
+                font-size: 40px;
+                letter-spacing: 4px;
+                margin: 20px auto;
+                justify-content: center;
+            } 
+    
+            .enviar-form {
+                margin: 20px;
+    
+                label{
+                    color: $titlecolor;
+                }
+                
+                .form-select{
+                    margin-top: 40px;
+                }
+                
+                button{
+                    margin-top: 40px;
+                }
+            }
+        }
+    
+        .hambur1 img{
+            width: 350px;
+            height: 250px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .hambur2 img{
+            width: 350px;
+            height: 250px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hambur3 img{
+            width: 350px;
+            height: 300px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hambur4 img{
+            width: 350px;
+            height: 300px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hambur1,
+        .hambur2,
+        .hambur3,
+        .hambur4{
+            margin: 10px auto;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+   
+}
+
+@media screen and (max-width: 780px){
+
+    .contenedor-reservas{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "formulario"
+        "hambur1"
+        "hambur2"
+        "hambur3"
+        "hambur4";
+        justify-content: center;
+        align-items: center;
+
+        .formulario{
+            grid-area: formulario;
+            .intro-form{
+                p{
+                    margin: 20px;
+                    text-align: center;
+                    color: white;
+                }
+            }
+    
+            h2{
+                font-family: 'Permanent Marker', cursive;
+                color: $titlecolor;
+                font-weight: bold;
+                font-size: 40px;
+                letter-spacing: 4px;
+                margin: 20px auto;
+                justify-content: center;
+            } 
+    
+            .enviar-form {
+                margin: 20px;
+    
+                label{
+                    color: $titlecolor;
+                }
+                
+                .form-select{
+                    margin-top: 40px;
+                }
+                
+                button{
+                    margin-top: 40px;
+                }
+            }
+        }
+    
+        .hambur1 img{
+            width: 550px;
+            height: 450px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .hambur2 img{
+            width: 560px;
+            height: 425px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hambur3 img{
+            width: 560px;
+            height: 475px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hambur4 img{
+            width: 560px;
+            height: 550px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hambur1,
+        .hambur2,
+        .hambur3,
+        .hambur4{
+            max-width: 100%;
+            height: auto;
+            margin: 10px auto;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 580px){
+
+    .contenedor-reservas{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "formulario"
+        "hambur1"
+        "hambur2"
+        "hambur3"
+        "hambur4";
+        justify-content: center;
+        align-items: center;
+
+        .formulario{
+            grid-area: formulario;
+            .intro-form{
+                p{
+                    display: none;
+                    margin: 20px;
+                    text-align: center;
+                    color: white;
+                }
+            }
+    
+            h2{
+                font-family: 'Permanent Marker', cursive;
+                color: $titlecolor;
+                font-weight: bold;
+                font-size: 40px;
+                letter-spacing: 4px;
+                margin: 20px auto;
+                justify-content: center;
+            } 
+    
+            .enviar-form {
+                margin: 20px;
+    
+                label{
+                    color: $titlecolor;
+                }
+                
+                .form-select{
+                    margin-top: 40px;
+                }
+                
+                button{
+                    margin-top: 40px;
+                }
+            }
+        }
+    
+        .hambur1 img{
+            width: 400px;
+            height: 350px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .hambur2 img{
+            width: 450px;
+            height: 350px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hambur3 img{
+            width: 450px;
+            height: 400px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hambur4 img{
+            width: 400px;
+            height: 425px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hambur1,
+        .hambur2,
+        .hambur3,
+        .hambur4{
+            max-width: 100%;
+            height: auto;
+            margin: 10px auto;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    
+    .contenedor-reservas{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.3fr 0.3fr 0.3fr 0.3fr;
+        grid-template-areas: 
+        "formulario"
+        "hambur1"
+        "hambur2"
+        "hambur3"
+        "hambur4";
+        justify-content: center;
+        align-items: center;
+
+        .formulario{
+            grid-area: formulario;
+            .intro-form{
+                p{
+                    display: none;
+                    margin: 20px;
+                    text-align: center;
+                    color: white;
+                }
+            }
+    
+            h2{
+                font-family: 'Permanent Marker', cursive;
+                color: $titlecolor;
+                font-weight: bold;
+                font-size: 35px;
+                letter-spacing: 4px;
+                margin-top: 20px;
+                text-align: center;
+            } 
+    
+            .enviar-form {
+                margin: 20px;
+    
+                label{
+                    color: $titlecolor;
+                }
+                
+                .form-select{
+                    margin-top: 40px;
+                }
+                
+                button{
+                    margin-top: 40px;
+                }
+            }
+        }
+    
+        img{
+            margin-top: 20px;
+            margin-right: 15px;
+        }
+    
+        .hambur1 img,
+        .hambur2 img,
+        .hambur3 img,
+        .hambur4 img{
+            max-width: 100%;
+            height: auto;
+            margin: 10px auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hambur1 img{
+            width: 300px;
+            height: 250px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .hambur2 img{
+            width: 300px;
+            height: 250px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hambur3 img{
+            width: 300px;
+            height: 250px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hambur4 img{
+            width: 300px;
+            height: 300px;
+            margin: 1px 1px;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+}

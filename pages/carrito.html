@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grill & Go | Reservas</title>
+    <meta
+      name="description"
+      content="Reserva una mesa en nuestro restaurante de hamburguesas y disfruta de nuestras deliciosas hamburguesas preparadas con ingredientes frescos y de alta calidad. Garantizamos una experiencia gastronómica excepcional."
+    />
+    <meta
+      name="keywords"
+      content="reserva de restaurante, hamburguesas, reservas, reservas de mesa, restaurante de hamburguesas, hamburguesas deliciosas, reserva en línea, reserva de mesa de hamburguesas, reservas de restaurante de comida rápida"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../scss/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="link-logo" href="../index.html"><img src="../img/logo.png" alt="logo" /></a>
+          <a class="navbar-brand" href="../index.html">Grill & Go</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./carrito.html">Carrito <span id="numero-carrito">0</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h2 class="titulo-principal">Carrito</h2>
+      <div class="contenedor-carrito">
+        <div class="carritos-productos">
+          <div class="carrito-producto">
+            <img class="carrito-producto-imagen" src="../img/Burger1.jpg" alt="burger" />
+            <div class="carrito-producto-titulo">
+              <small>Nombre</small>
+              <h3>Burger Grill - 10,90€</h3>
+            </div>
+            <div class="carrito-producto-cantidad">
+              <small>Cantidad</small>
+              <p>1</p>
+            </div>
+            <div class="carrito-producto-precio">
+              <small>Precio</small>
+              <p>10,90</p>
+            </div>
+            <div class="carrito-producto-subtotal">
+              <small>Subtotal</small>
+              <p>10,90</p>
+            </div>
+            <button class="carrito-producto-eliminar">Quitar</button>
+          </div>
+          <div class="carrito-producto">
+            <img class="carrito-producto-imagen" src="../img/burger2.jpg" alt="burger2" />
+            <div class="carrito-producto-titulo">
+              <small>Nombre</small>
+              <h3>Burger Clásica - 10,90€</h3>
+            </div>
+            <div class="carrito-producto-cantidad">
+              <small>Cantidad</small>
+              <p>2</p>
+            </div>
+            <div class="carrito-producto-precio">
+              <small>Precio</small>
+              <p>10,90</p>
+            </div>
+            <div class="carrito-producto-subtotal">
+              <small>Subtotal</small>
+              <p>21,80</p>
+            </div>
+            <button class="carrito-producto-eliminar">Quitar</button>
+          </div>
+        </div>
+        <div class="carrito-acciones">
+          <div class="carrito-acciones-izquierda">
+            <button class="carrito-acciones-vaciar">Quitar todo</button>
+          </div>
+          <div class="carrito-acciones-derecha">
+            <div class="carrito-acciones-total">
+              <p>Total:</p>
+              <p id="total">€30</p>
+            </div>
+            <button class="carrito-acciones-comprar">Comprar Ahora</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="contacto-redes">
+        <a target="_blank" href="https://www.facebook.com"
+          ><img class="facebook-logo" src="../img/facebook.png" alt="facebook-logo"
+        /></a>
+        <a target="_blank" href="https://www.instagram.com"
+          ><img class="instagram-logo" src="../img/instagram.png" alt="instagram-logo"
+        /></a>
+        <a target="_blank" href="https://www.whatsapp.com"
+          ><img class="whatsapp-logo" src="../img/whatsapp.png" alt="whatsapp-logo"
+        /></a>
+        <p class="copyright">Derechos reservados &reg; | Grill &amp; Go</p>
+      </div>
+    </footer>
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>

@@ -58,61 +58,20 @@
       </nav>
     </header>
     <main>
-      <h2 class="titulo-principal">Carrito</h2>
-      <div class="contenedor-carrito">
-        <div class="carritos-productos">
-          <div class="carrito-producto">
-            <img class="carrito-producto-imagen" src="../img/Burger1.jpg" alt="burger" />
-            <div class="carrito-producto-titulo">
-              <small>Nombre</small>
-              <h3>Burger Grill - 10,90€</h3>
-            </div>
-            <div class="carrito-producto-cantidad">
-              <small>Cantidad</small>
-              <p>1</p>
-            </div>
-            <div class="carrito-producto-precio">
-              <small>Precio</small>
-              <p>10,90</p>
-            </div>
-            <div class="carrito-producto-subtotal">
-              <small>Subtotal</small>
-              <p>10,90</p>
-            </div>
-            <button class="carrito-producto-eliminar">Quitar</button>
-          </div>
-          <div class="carrito-producto">
-            <img class="carrito-producto-imagen" src="../img/burger2.jpg" alt="burger2" />
-            <div class="carrito-producto-titulo">
-              <small>Nombre</small>
-              <h3>Burger Clásica - 10,90€</h3>
-            </div>
-            <div class="carrito-producto-cantidad">
-              <small>Cantidad</small>
-              <p>2</p>
-            </div>
-            <div class="carrito-producto-precio">
-              <small>Precio</small>
-              <p>10,90</p>
-            </div>
-            <div class="carrito-producto-subtotal">
-              <small>Subtotal</small>
-              <p>21,80</p>
-            </div>
-            <button class="carrito-producto-eliminar">Quitar</button>
-          </div>
+      <h2 class="titulo-principal">Pedido de compra</h2>
+      <div class="contenedor-carrito" id="contenedor-carrito">
+        <!-- Acá se ejecutará el JS-->
+      </div>
+      <div class="carrito-acciones">
+        <div class="carrito-acciones-izquierda">
+          <button class="carrito-acciones-vaciar" onclick="vaciarCarrito()">Quitar todo</button>
         </div>
-        <div class="carrito-acciones">
-          <div class="carrito-acciones-izquierda">
-            <button class="carrito-acciones-vaciar">Quitar todo</button>
+        <div class="carrito-acciones-derecha">
+          <div class="carrito-acciones-total">
+            <p>Total:</p>
+            <p id="total">€0.00</p>
           </div>
-          <div class="carrito-acciones-derecha">
-            <div class="carrito-acciones-total">
-              <p>Total:</p>
-              <p id="total">€30</p>
-            </div>
-            <button class="carrito-acciones-comprar">Comprar Ahora</button>
-          </div>
+          <button class="carrito-acciones-comprar" onclick="realizarCompra()">Comprar Ahora</button>
         </div>
       </div>
     </main>
@@ -130,6 +89,6 @@
         <p class="copyright">Derechos reservados &reg; | Grill &amp; Go</p>
       </div>
     </footer>
-    <script src="../js/scripts.js"></script>
+    <script src="../js/carrito.js"></script>
   </body>
 </html>

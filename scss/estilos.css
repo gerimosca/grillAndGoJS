@@ -237,8 +237,71 @@ main .mas-pedidos {
 /* PAGINA CARRITO */
 /* PAGINA CARRITO */
 /* PAGINA CARRITO */
+.carrito-acciones {
+  display: flex;
+  justify-content: space-between;
+}
+.carrito-acciones .carrito-acciones-izquierda {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.carrito-acciones .carrito-acciones-izquierda .carrito-acciones-vaciar {
+  border: 0;
+  background-color: rgb(237, 217, 0);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.carrito-acciones .carrito-acciones-izquierda .carrito-acciones-vaciar:hover {
+  background-color: rgb(143, 145, 20);
+}
+.carrito-acciones .carrito-acciones-derecha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+.carrito-acciones .carrito-acciones-derecha .carrito-acciones-total {
+  display: flex;
+  background-color: rgb(168, 51, 51);
+  padding: 0.5rem;
+  border-radius: 1rem 0rem 0rem 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+.carrito-acciones .carrito-acciones-derecha .carrito-acciones-total p {
+  align-items: center;
+  margin: 0;
+  padding: 0.5rem 0.5rem;
+}
+.carrito-acciones .carrito-acciones-derecha .carrito-acciones-comprar {
+  border: 0;
+  background-color: rgb(237, 217, 0);
+  padding: 1rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+  color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+  align-items: center;
+}
+.carrito-acciones .carrito-acciones-derecha .carrito-acciones-comprar:hover {
+  background-color: rgb(143, 145, 20);
+}
+
+.titulo-principal {
+  margin-top: 90px;
+  font-family: "Permanent Marker", cursive;
+  color: rgb(237, 217, 0);
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
 .contenedor-carrito {
-  margin-top: 60px;
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -255,7 +318,7 @@ main .mas-pedidos {
   justify-content: space-between;
   background-color: rgb(237, 217, 0);
   color: black;
-  padding: 0.5rem;
+  padding: 0.4rem;
   align-items: center;
   border-radius: 1rem;
 }
@@ -280,57 +343,6 @@ main .mas-pedidos {
 }
 .contenedor-carrito .carritos-productos .carrito-producto .carrito-producto-eliminar:hover {
   background-color: rgb(188, 36, 36);
-}
-.contenedor-carrito .carrito-acciones {
-  display: flex;
-  justify-content: space-between;
-}
-.contenedor-carrito .carrito-acciones .carrito-acciones-izquierda {
-  margin-left: 50px;
-}
-.contenedor-carrito .carrito-acciones .carrito-acciones-izquierda .carrito-acciones-vaciar {
-  border: 0;
-  background-color: rgb(237, 217, 0);
-  padding: 1rem;
-  border-radius: 1rem;
-  color: black;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.contenedor-carrito .carrito-acciones .carrito-acciones-izquierda .carrito-acciones-vaciar:hover {
-  background-color: rgb(143, 145, 20);
-}
-.contenedor-carrito .carrito-acciones .carrito-acciones-derecha {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 50px;
-}
-.contenedor-carrito .carrito-acciones .carrito-acciones-derecha .carrito-acciones-total {
-  display: flex;
-  background-color: rgb(168, 51, 51);
-  padding: 0.5rem;
-  border-radius: 1rem 0rem 0rem 1rem;
-  color: white;
-  text-transform: uppercase;
-}
-.contenedor-carrito .carrito-acciones .carrito-acciones-derecha .carrito-acciones-total p {
-  align-items: center;
-  margin: 0;
-  padding: 0.5rem 0.5rem;
-}
-.contenedor-carrito .carrito-acciones .carrito-acciones-derecha .carrito-acciones-comprar {
-  border: 0;
-  background-color: rgb(237, 217, 0);
-  padding: 1rem;
-  border-radius: 0rem 1rem 1rem 0rem;
-  color: black;
-  text-transform: uppercase;
-  cursor: pointer;
-  align-items: center;
-}
-.contenedor-carrito .carrito-acciones .carrito-acciones-derecha .carrito-acciones-comprar:hover {
-  background-color: rgb(143, 145, 20);
 }
 
 /* PAGINA PEDIDO RESPONSIVE */

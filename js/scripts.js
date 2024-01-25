@@ -62,6 +62,15 @@ const numeroCarritoElement = document.getElementById('numero-carrito');
 let cantidadEnCarrito = parseInt(localStorage.getItem('cantidadEnCarrito')) || 0;
 let productosEnCarrito = JSON.parse(localStorage.getItem('productosEnCarrito')) || [];
 
+document.addEventListener('DOMContentLoaded', () => {
+  // Cargar datos del localStorage al inicio
+  cantidadEnCarrito = parseInt(localStorage.getItem('cantidadEnCarrito')) || 0;
+  productosEnCarrito = JSON.parse(localStorage.getItem('productosEnCarrito')) || [];
+
+  // Actualizar el contador en la interfaz de usuario
+  actualizarNumeroCarrito();
+});
+
 const cargarProductos = () => {
   burgersArray.forEach((producto) => {
     const div = document.createElement('div');
@@ -81,7 +90,6 @@ const cargarProductos = () => {
     contenedorProductos.append(div);
   });
 
-  actualizarNumeroCarrito();
   agregarEventoAlCarrito();
 };
 

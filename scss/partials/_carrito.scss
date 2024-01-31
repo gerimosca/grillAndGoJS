@@ -5,10 +5,12 @@
 .carrito-acciones{
     display: flex;
     justify-content: space-between;
+    align-content: center;
 
     .carrito-acciones-izquierda{
         margin-left: 50px;
-        margin-top: 50px;
+        margin-top: 20px;
+        margin-bottom: 15px;
 
         .carrito-acciones-vaciar{
             border: 0;
@@ -30,7 +32,7 @@
         align-items: center;
         justify-content: center;
         margin-right: 50px;
-        margin-top: 50px;
+        margin-top: 5px;
 
         .carrito-acciones-total{
             display: flex;

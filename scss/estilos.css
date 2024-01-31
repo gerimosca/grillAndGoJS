@@ -69,7 +69,8 @@ footer {
   display: flex;
   margin: 5px auto;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: auto;
+  width: 100%;
 }
 footer .contacto-redes img {
   align-items: center;
@@ -86,7 +87,15 @@ footer .contacto-redes .copyright {
 /* PAGINA PEDIDOS */
 /* PAGINA PEDIDOS */
 /* PAGINA PEDIDOS */
-main .mas-pedidos {
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body main {
+  flex: 1;
+}
+body main .mas-pedidos {
   margin-top: 20px;
   margin-bottom: 30px;
   font-family: "Permanent Marker", cursive;
@@ -96,61 +105,60 @@ main .mas-pedidos {
   letter-spacing: 4px;
   text-align: center;
 }
-
-.contenedor-pedidos {
+body .contenedor-pedidos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "hamburguesa1 hamburguesa2 hamburguesa3" "hamburguesa4 hamburguesa5 hamburguesa6" "hamburguesa7 hamburguesa8 hamburguesa9";
 }
-.contenedor-pedidos .contenedor-hamburguesa {
+body .contenedor-pedidos .contenedor-hamburguesa {
   place-items: center;
   text-align: center;
   align-items: center;
+  margin-bottom: 10px;
 }
-.contenedor-pedidos .contenedor-hamburguesa .hamburguesa1 {
+body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa1 {
   grid-area: hamburguesa1;
 }
-.contenedor-pedidos .contenedor-hamburguesa .hamburguesa2 {
+body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa2 {
   grid-area: hamburguesa2;
 }
-.contenedor-pedidos .contenedor-hamburguesa .hamburguesa3 {
+body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa3 {
   grid-area: hamburguesa3;
 }
-.contenedor-pedidos .contenedor-hamburguesa .hamburguesa4 {
+body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa4 {
   grid-area: hamburguesa4;
 }
-.contenedor-pedidos .contenedor-hamburguesa .hamburguesa5 {
+body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa5 {
   grid-area: hamburguesa5;
 }
-.contenedor-pedidos .contenedor-hamburguesa .hamburguesa6 {
+body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa6 {
   grid-area: hamburguesa6;
 }
-.contenedor-pedidos .contenedor-hamburguesa .hamburguesa7 {
+body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa7 {
   grid-area: hamburguesa7;
 }
-.contenedor-pedidos .contenedor-hamburguesa .hamburguesa8 {
+body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa8 {
   grid-area: hamburguesa8;
 }
-.contenedor-pedidos .contenedor-hamburguesa .hamburguesa9 {
+body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa9 {
   grid-area: hamburguesa9;
 }
-.contenedor-pedidos .contenedor-hamburguesa .hamburguesa {
+body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa {
   display: grid;
   place-items: center;
   text-align: center;
   width: 100%;
-  border-radius: 2px;
 }
-.contenedor-pedidos .contenedor-hamburguesa .pedido1,
-.contenedor-pedidos .contenedor-hamburguesa .pedido2,
-.contenedor-pedidos .contenedor-hamburguesa .pedido3,
-.contenedor-pedidos .contenedor-hamburguesa .pedido4,
-.contenedor-pedidos .contenedor-hamburguesa .pedido5,
-.contenedor-pedidos .contenedor-hamburguesa .pedido6,
-.contenedor-pedidos .contenedor-hamburguesa .pedido7,
-.contenedor-pedidos .contenedor-hamburguesa .pedido8,
-.contenedor-pedidos .contenedor-hamburguesa .pedido9 {
+body .contenedor-pedidos .contenedor-hamburguesa .pedido1,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido2,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido3,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido4,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido5,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido6,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido7,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido8,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido9 {
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -158,17 +166,18 @@ main .mas-pedidos {
   align-items: center;
   max-width: 100%;
 }
-.contenedor-pedidos .contenedor-hamburguesa .pedido1 .boton-carrito,
-.contenedor-pedidos .contenedor-hamburguesa .pedido2 .boton-carrito,
-.contenedor-pedidos .contenedor-hamburguesa .pedido3 .boton-carrito,
-.contenedor-pedidos .contenedor-hamburguesa .pedido4 .boton-carrito,
-.contenedor-pedidos .contenedor-hamburguesa .pedido5 .boton-carrito,
-.contenedor-pedidos .contenedor-hamburguesa .pedido6 .boton-carrito,
-.contenedor-pedidos .contenedor-hamburguesa .pedido7 .boton-carrito,
-.contenedor-pedidos .contenedor-hamburguesa .pedido8 .boton-carrito,
-.contenedor-pedidos .contenedor-hamburguesa .pedido9 .boton-carrito {
+body .contenedor-pedidos .contenedor-hamburguesa .pedido1 .boton-carrito,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido2 .boton-carrito,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido3 .boton-carrito,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido4 .boton-carrito,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido5 .boton-carrito,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido6 .boton-carrito,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido7 .boton-carrito,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido8 .boton-carrito,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido9 .boton-carrito {
   border: 0;
   border-radius: 10px;
+  margin-top: 1px;
   padding: 10px;
   max-width: 100%;
   background-color: rgb(237, 217, 0);
@@ -179,55 +188,56 @@ main .mas-pedidos {
   text-align: center;
   place-items: center;
 }
-.contenedor-pedidos .contenedor-hamburguesa .pedido1 .boton-carrito:hover,
-.contenedor-pedidos .contenedor-hamburguesa .pedido2 .boton-carrito:hover,
-.contenedor-pedidos .contenedor-hamburguesa .pedido3 .boton-carrito:hover,
-.contenedor-pedidos .contenedor-hamburguesa .pedido4 .boton-carrito:hover,
-.contenedor-pedidos .contenedor-hamburguesa .pedido5 .boton-carrito:hover,
-.contenedor-pedidos .contenedor-hamburguesa .pedido6 .boton-carrito:hover,
-.contenedor-pedidos .contenedor-hamburguesa .pedido7 .boton-carrito:hover,
-.contenedor-pedidos .contenedor-hamburguesa .pedido8 .boton-carrito:hover,
-.contenedor-pedidos .contenedor-hamburguesa .pedido9 .boton-carrito:hover {
-  background-color: rgb(237, 217, 0);
+body .contenedor-pedidos .contenedor-hamburguesa .pedido1 .boton-carrito:hover,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido2 .boton-carrito:hover,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido3 .boton-carrito:hover,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido4 .boton-carrito:hover,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido5 .boton-carrito:hover,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido6 .boton-carrito:hover,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido7 .boton-carrito:hover,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido8 .boton-carrito:hover,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido9 .boton-carrito:hover {
+  background-color: #abb481;
   border-color: black;
 }
-.contenedor-pedidos .contenedor-hamburguesa .pedido1 .boton-carrito:active,
-.contenedor-pedidos .contenedor-hamburguesa .pedido2 .boton-carrito:active,
-.contenedor-pedidos .contenedor-hamburguesa .pedido3 .boton-carrito:active,
-.contenedor-pedidos .contenedor-hamburguesa .pedido4 .boton-carrito:active,
-.contenedor-pedidos .contenedor-hamburguesa .pedido5 .boton-carrito:active,
-.contenedor-pedidos .contenedor-hamburguesa .pedido6 .boton-carrito:active,
-.contenedor-pedidos .contenedor-hamburguesa .pedido7 .boton-carrito:active,
-.contenedor-pedidos .contenedor-hamburguesa .pedido8 .boton-carrito:active,
-.contenedor-pedidos .contenedor-hamburguesa .pedido9 .boton-carrito:active {
-  background-color: #9ec007;
+body .contenedor-pedidos .contenedor-hamburguesa .pedido1 .boton-carrito:active,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido2 .boton-carrito:active,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido3 .boton-carrito:active,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido4 .boton-carrito:active,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido5 .boton-carrito:active,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido6 .boton-carrito:active,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido7 .boton-carrito:active,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido8 .boton-carrito:active,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido9 .boton-carrito:active {
+  background-color: #a3b650;
   border-color: #ffffff;
 }
-.contenedor-pedidos .contenedor-hamburguesa .pedido1 .text-pedido,
-.contenedor-pedidos .contenedor-hamburguesa .pedido2 .text-pedido,
-.contenedor-pedidos .contenedor-hamburguesa .pedido3 .text-pedido,
-.contenedor-pedidos .contenedor-hamburguesa .pedido4 .text-pedido,
-.contenedor-pedidos .contenedor-hamburguesa .pedido5 .text-pedido,
-.contenedor-pedidos .contenedor-hamburguesa .pedido6 .text-pedido,
-.contenedor-pedidos .contenedor-hamburguesa .pedido7 .text-pedido,
-.contenedor-pedidos .contenedor-hamburguesa .pedido8 .text-pedido,
-.contenedor-pedidos .contenedor-hamburguesa .pedido9 .text-pedido {
+body .contenedor-pedidos .contenedor-hamburguesa .pedido1 .text-pedido,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido2 .text-pedido,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido3 .text-pedido,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido4 .text-pedido,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido5 .text-pedido,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido6 .text-pedido,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido7 .text-pedido,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido8 .text-pedido,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido9 .text-pedido {
   color: white;
   justify-content: center;
   align-items: center;
   text-align: center;
   place-items: center;
   font-size: 15px;
+  margin-bottom: 5px;
 }
-.contenedor-pedidos .contenedor-hamburguesa .pedido1 .titulo-pedido,
-.contenedor-pedidos .contenedor-hamburguesa .pedido2 .titulo-pedido,
-.contenedor-pedidos .contenedor-hamburguesa .pedido3 .titulo-pedido,
-.contenedor-pedidos .contenedor-hamburguesa .pedido4 .titulo-pedido,
-.contenedor-pedidos .contenedor-hamburguesa .pedido5 .titulo-pedido,
-.contenedor-pedidos .contenedor-hamburguesa .pedido6 .titulo-pedido,
-.contenedor-pedidos .contenedor-hamburguesa .pedido7 .titulo-pedido,
-.contenedor-pedidos .contenedor-hamburguesa .pedido8 .titulo-pedido,
-.contenedor-pedidos .contenedor-hamburguesa .pedido9 .titulo-pedido {
+body .contenedor-pedidos .contenedor-hamburguesa .pedido1 .titulo-pedido,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido2 .titulo-pedido,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido3 .titulo-pedido,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido4 .titulo-pedido,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido5 .titulo-pedido,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido6 .titulo-pedido,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido7 .titulo-pedido,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido8 .titulo-pedido,
+body .contenedor-pedidos .contenedor-hamburguesa .pedido9 .titulo-pedido {
   color: rgb(237, 217, 0);
   justify-content: center;
   align-items: center;
@@ -261,10 +271,12 @@ main .mas-pedidos {
 .carrito-acciones {
   display: flex;
   justify-content: space-between;
+  align-content: center;
 }
 .carrito-acciones .carrito-acciones-izquierda {
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 .carrito-acciones .carrito-acciones-izquierda .carrito-acciones-vaciar {
   border: 0;
@@ -283,7 +295,7 @@ main .mas-pedidos {
   align-items: center;
   justify-content: center;
   margin-right: 50px;
-  margin-top: 50px;
+  margin-top: 5px;
 }
 .carrito-acciones .carrito-acciones-derecha .carrito-acciones-total {
   display: flex;

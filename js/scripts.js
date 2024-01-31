@@ -1,4 +1,4 @@
-//PRODUCTOS ARRAY
+//PRODUCTOS DEL ARRAY
 
 const burgersArray = [
   {
@@ -67,30 +67,45 @@ document.addEventListener('DOMContentLoaded', () => {
   cantidadEnCarrito = parseInt(localStorage.getItem('cantidadEnCarrito')) || 0;
   productosEnCarrito = JSON.parse(localStorage.getItem('productosEnCarrito')) || [];
 
-  // Actualizar el contador en la interfaz de usuario
+  // Actualizar el contador
   actualizarNumeroCarrito();
+
+  // Cargar y mostrar productos desde JSON
+  cargarProductosDesdeJSON();
 });
 
-const cargarProductos = () => {
-  burgersArray.forEach((producto) => {
-    const div = document.createElement('div');
-    div.classList.add('contenedor-hamburguesa');
-    div.innerHTML = `
-        <div class="hamburguesa">
-            <img src="${producto.imagen}" alt="${producto.titulo}" />
-        </div>
-        <div class="pedido1">
-            <h4 class="titulo-pedido">${producto.titulo}</h4>
-            <p class="text-pedido">€${producto.precio}</p>
-            <button class="boton-carrito" id="${producto.id}">Agregar al carrito</button>
-        </div>
+const cargarProductosDesdeJSON = async () => {
+  try {
+    // Fetch a productos.json
+    const response = await fetch('./js/productos.json');
+    const data = await response.json();
 
-    `;
+    // Dejar vacio el contenedor
+    contenedorProductos.innerHTML = '';
 
-    contenedorProductos.append(div);
-  });
+    // Productos obtenidos del archivo productos.JSON
+    data.forEach((producto) => {
+      const div = document.createElement('div');
+      div.classList.add('contenedor-hamburguesa');
+      div.innerHTML = `
+          <div class="hamburguesa">
+              <img src="${producto.imagen}" alt="${producto.titulo}" />
+          </div>
+          <div class="pedido1">
+              <h4 class="titulo-pedido">${producto.titulo}</h4>
+              <p class="text-pedido">€${producto.precio}</p>
+              <button class="boton-carrito" id="${producto.id}">Agregar al carrito</button>
+          </div>
+      `;
 
-  agregarEventoAlCarrito();
+      contenedorProductos.append(div);
+    });
+
+    // Evento al carrito después de cargar los productos
+    agregarEventoAlCarrito();
+  } catch (error) {
+    console.error('Error al cargar productos desde el archivo JSON:', error);
+  }
 };
 
 const agregarEventoAlCarrito = () => {
@@ -100,8 +115,6 @@ const agregarEventoAlCarrito = () => {
     boton.addEventListener('click', agregarAlCarrito);
   });
 };
-
-// const productosEnCarrito = [];
 
 const agregarAlCarrito = (e) => {
   const id = e.currentTarget.id;
@@ -115,6 +128,8 @@ const agregarAlCarrito = (e) => {
 
     localStorage.setItem('cantidadEnCarrito', cantidadEnCarrito.toString());
     localStorage.setItem('productosEnCarrito', JSON.stringify(productosEnCarrito));
+
+    // Agregado de Libreria
 
     Swal.fire({
       title: productoSeleccionado.titulo,
@@ -132,6 +147,6 @@ const actualizarNumeroCarrito = () => {
   numeroCarritoElement.innerText = cantidadEnCarrito.toString();
 };
 
-cargarProductos();
+cargarProductosDesdeJSON();
 
 const sweetAlertCarrito = document.querySelector('boton-carrito');

@@ -1,0 +1,56 @@
+[
+    {
+      "id": "pedido1",
+      "titulo": "Burger Grill - 10,90€",
+      "imagen": "./img/Burger1.jpg",
+      "precio": 10.9
+    },
+    {
+      "id": "pedido2",
+      "titulo": "Burger Clásica - 10,90€",
+      "imagen": "./img/burger2.jpg",
+      "precio": 10.9
+    },
+    {
+      "id": "pedido3",
+      "titulo": "Cabrita - 12,90€",
+      "imagen": "./img/burger3.jpg",
+      "precio": 12.9
+    },
+    {
+      "id": "pedido4",
+      "titulo": "Caprichosa - 14,90€",
+      "imagen": "./img/burger4.jpg",
+      "precio": 14.9
+    },
+    {
+      "id": "pedido5",
+      "titulo": "Tex Mex - 13,90€",
+      "imagen": "./img/burger5.jpg",
+      "precio": 13.9
+    },
+    {
+      "id": "pedido6",
+      "titulo": "Chicken Sandwich - 9,90€",
+      "imagen": "./img/burger6.jpg",
+      "precio": 9.9
+    },
+    {
+      "id": "pedido7",
+      "titulo": "Chicken Burger - 13,50€",
+      "imagen": "./img/burger7.jpg",
+      "precio": 13.5
+    },
+    {
+      "id": "pedido8",
+      "titulo": "Ensalada César - 9,50€",
+      "imagen": "./img/ensalada.jpg",
+      "precio": 9.5
+    },
+    {
+      "id": "pedido9",
+      "titulo": "Nachos Tex - 10,50€",
+      "imagen": "./img/nachos.jpg",
+      "precio": 10.5
+    }
+  ]

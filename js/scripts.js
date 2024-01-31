@@ -135,5 +135,3 @@ const actualizarNumeroCarrito = () => {
 cargarProductos();
 
 const sweetAlertCarrito = document.querySelector('boton-carrito');
-
-sweetAlertCarrito.addEventListener('click', () => {});

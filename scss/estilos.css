@@ -60,7 +60,7 @@ body header .navbar.navbar-expand-lg.bg-body-tertiary .container-fluid .collapse
 }
 body header .navbar.navbar-expand-lg.bg-body-tertiary .container-fluid .collapse.navbar-collapse .nav-item .nav-link span {
   background-color: black;
-  padding: 2spx;
+  padding: 1px 6.5px;
   border-radius: 10px;
 }
 
@@ -140,6 +140,7 @@ main .mas-pedidos {
   place-items: center;
   text-align: center;
   width: 100%;
+  border-radius: 2px;
 }
 .contenedor-pedidos .contenedor-hamburguesa .pedido1,
 .contenedor-pedidos .contenedor-hamburguesa .pedido2,
@@ -232,6 +233,26 @@ main .mas-pedidos {
   align-items: center;
   text-align: center;
   place-items: center;
+}
+
+.swal2-container .swal2-popup {
+  border-width: 2px;
+  border-color: rgb(237, 217, 0);
+  border-style: solid;
+  background-color: rgb(168, 51, 51);
+}
+.swal2-container .swal2-popup .swal2-icon .swal2-success {
+  color: white;
+}
+.swal2-container .swal2-popup .swal2-title {
+  color: white;
+}
+.swal2-container .swal2-popup .swal2-html-container {
+  color: white;
+}
+.swal2-container .swal2-popup .swal2-actions .swal2-confirm {
+  background-color: rgb(237, 217, 0);
+  color: black;
 }
 
 /* PAGINA CARRITO */
@@ -354,7 +375,7 @@ main .mas-pedidos {
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "hamburguesa1   hamburguesa2    hamburguesa3" "hamburguesa4   hamburguesa5    hamburguesa6" "hamburguesa7   hamburguesa8    hamburguesa9";
   }
-  .contenedor-pedidos img {
+  .contenedor-pedidos .contenedor-hamburguesa img {
     width: 400px;
     height: 250px;
     border-radius: 10px;

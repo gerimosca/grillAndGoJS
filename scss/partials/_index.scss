@@ -65,6 +65,7 @@ main{
             place-items: center;
             text-align: center;
             width: 100%;
+            border-radius: 2px;
         }
             
             
@@ -128,5 +129,37 @@ main{
     
         }
 
+    }
+}
+
+
+.swal2-container{
+    
+    .swal2-popup{
+        border-width: 2px;
+        border-color: $titlecolor;
+        border-style: solid;
+        background-color: rgb(168, 51, 51);
+
+        .swal2-icon{
+            .swal2-success{
+                color: white;
+
+            }
+        }
+        .swal2-title{
+            color: white;
+        }
+                
+        .swal2-html-container{
+            color: white;
+        }
+
+        .swal2-actions{
+            .swal2-confirm{
+                background-color: $titlecolor;
+                color: black;
+            }
+        }
     }
 }

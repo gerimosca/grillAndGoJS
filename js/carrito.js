@@ -19,7 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
 const cargarProductosEnCarrito = () => {
   contenedorCarrito.innerHTML = '';
 
+  const cantidadPorProducto = {};
+
   productosEnCarrito.forEach((producto) => {
+    cantidadPorProducto[producto.id] = (cantidadPorProducto[producto.id] || 0) + 1;
+  });
+
+  for (const [productoId, cantidad] of Object.entries(cantidadPorProducto)) {
+    const producto = productosEnCarrito.find((p) => p.id === productoId);
+
     const div = document.createElement('div');
     div.classList.add('contenedor-carrito');
     div.innerHTML = `
@@ -32,7 +40,7 @@ const cargarProductosEnCarrito = () => {
           </div>
           <div class="carrito-producto-cantidad">
             <small>Cantidad</small>
-            <p>1</p>
+            <p>${cantidad}</p>
           </div>
           <div class="carrito-producto-precio">
             <small>Precio</small>
@@ -40,7 +48,7 @@ const cargarProductosEnCarrito = () => {
           </div>
           <div class="carrito-producto-subtotal">
             <small>Subtotal</small>
-            <p>${(producto.precio * 1).toFixed(2)}</p>
+            <p>${(producto.precio * cantidad).toFixed(2)}</p>
           </div>
           <button class="carrito-producto-eliminar" onclick="eliminarProductoDelCarrito('${
             producto.id
@@ -50,7 +58,7 @@ const cargarProductosEnCarrito = () => {
     `;
 
     contenedorCarrito.append(div);
-  });
+  }
 
   // Calcular y mostrar el total
   calcularYMostrarTotal();

@@ -115,6 +115,14 @@ const agregarAlCarrito = (e) => {
 
     localStorage.setItem('cantidadEnCarrito', cantidadEnCarrito.toString());
     localStorage.setItem('productosEnCarrito', JSON.stringify(productosEnCarrito));
+
+    Swal.fire({
+      title: productoSeleccionado.titulo,
+      text: 'Agregado al carrito',
+      icon: 'success',
+      confirmButtonText: 'Aceptar',
+      iconColor: 'white',
+    });
   } else {
     console.log('Producto no encontrado');
   }
@@ -125,3 +133,7 @@ const actualizarNumeroCarrito = () => {
 };
 
 cargarProductos();
+
+const sweetAlertCarrito = document.querySelector('boton-carrito');
+
+sweetAlertCarrito.addEventListener('click', () => {});

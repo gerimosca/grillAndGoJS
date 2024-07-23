@@ -92,9 +92,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-body main {
-  flex: 1;
-}
 body main .mas-pedidos {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -105,60 +102,56 @@ body main .mas-pedidos {
   letter-spacing: 4px;
   text-align: center;
 }
-body .contenedor-pedidos {
+body main .contenedor-pedidos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "hamburguesa1 hamburguesa2 hamburguesa3" "hamburguesa4 hamburguesa5 hamburguesa6" "hamburguesa7 hamburguesa8 hamburguesa9";
 }
-body .contenedor-pedidos .contenedor-hamburguesa {
+body main .contenedor-pedidos .contenedor-hamburguesa {
   place-items: center;
   text-align: center;
   align-items: center;
   margin-bottom: 10px;
+  /* .hamburguesa1{
+      grid-area: hamburguesa1;
+
+  }
+  .hamburguesa2{
+      grid-area: hamburguesa2;
+  }
+  .hamburguesa3{
+      grid-area: hamburguesa3;
+  }
+  .hamburguesa4{
+      grid-area: hamburguesa4;
+  }
+  .hamburguesa5{
+      grid-area: hamburguesa5;
+  }
+  .hamburguesa6{
+      grid-area: hamburguesa6;
+  }
+  .hamburguesa7{
+      grid-area: hamburguesa7;
+  }
+  .hamburguesa8{
+      grid-area: hamburguesa8;
+  }
+  .hamburguesa9{
+      grid-area: hamburguesa9;
+  } */
 }
-body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa1 {
-  grid-area: hamburguesa1;
-}
-body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa2 {
-  grid-area: hamburguesa2;
-}
-body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa3 {
-  grid-area: hamburguesa3;
-}
-body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa4 {
-  grid-area: hamburguesa4;
-}
-body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa5 {
-  grid-area: hamburguesa5;
-}
-body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa6 {
-  grid-area: hamburguesa6;
-}
-body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa7 {
-  grid-area: hamburguesa7;
-}
-body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa8 {
-  grid-area: hamburguesa8;
-}
-body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa9 {
-  grid-area: hamburguesa9;
-}
-body .contenedor-pedidos .contenedor-hamburguesa .hamburguesa {
+body main .contenedor-pedidos .contenedor-hamburguesa .hamburguesa {
   display: grid;
   place-items: center;
   text-align: center;
   width: 100%;
 }
-body .contenedor-pedidos .contenedor-hamburguesa .pedido1,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido2,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido3,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido4,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido5,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido6,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido7,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido8,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido9 {
+body main .contenedor-pedidos .contenedor-hamburguesa .hamburguesa img {
+  border-radius: 20px;
+}
+body main .contenedor-pedidos .contenedor-hamburguesa .pedido1 {
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -166,15 +159,7 @@ body .contenedor-pedidos .contenedor-hamburguesa .pedido9 {
   align-items: center;
   max-width: 100%;
 }
-body .contenedor-pedidos .contenedor-hamburguesa .pedido1 .boton-carrito,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido2 .boton-carrito,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido3 .boton-carrito,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido4 .boton-carrito,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido5 .boton-carrito,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido6 .boton-carrito,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido7 .boton-carrito,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido8 .boton-carrito,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido9 .boton-carrito {
+body main .contenedor-pedidos .contenedor-hamburguesa .pedido1 .boton-carrito {
   border: 0;
   border-radius: 10px;
   margin-top: 1px;
@@ -188,39 +173,15 @@ body .contenedor-pedidos .contenedor-hamburguesa .pedido9 .boton-carrito {
   text-align: center;
   place-items: center;
 }
-body .contenedor-pedidos .contenedor-hamburguesa .pedido1 .boton-carrito:hover,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido2 .boton-carrito:hover,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido3 .boton-carrito:hover,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido4 .boton-carrito:hover,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido5 .boton-carrito:hover,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido6 .boton-carrito:hover,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido7 .boton-carrito:hover,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido8 .boton-carrito:hover,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido9 .boton-carrito:hover {
+body main .contenedor-pedidos .contenedor-hamburguesa .pedido1 .boton-carrito:hover {
   background-color: #abb481;
   border-color: black;
 }
-body .contenedor-pedidos .contenedor-hamburguesa .pedido1 .boton-carrito:active,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido2 .boton-carrito:active,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido3 .boton-carrito:active,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido4 .boton-carrito:active,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido5 .boton-carrito:active,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido6 .boton-carrito:active,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido7 .boton-carrito:active,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido8 .boton-carrito:active,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido9 .boton-carrito:active {
+body main .contenedor-pedidos .contenedor-hamburguesa .pedido1 .boton-carrito:active {
   background-color: #a3b650;
   border-color: #ffffff;
 }
-body .contenedor-pedidos .contenedor-hamburguesa .pedido1 .text-pedido,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido2 .text-pedido,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido3 .text-pedido,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido4 .text-pedido,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido5 .text-pedido,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido6 .text-pedido,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido7 .text-pedido,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido8 .text-pedido,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido9 .text-pedido {
+body main .contenedor-pedidos .contenedor-hamburguesa .pedido1 .text-pedido {
   color: white;
   justify-content: center;
   align-items: center;
@@ -229,15 +190,7 @@ body .contenedor-pedidos .contenedor-hamburguesa .pedido9 .text-pedido {
   font-size: 15px;
   margin-bottom: 5px;
 }
-body .contenedor-pedidos .contenedor-hamburguesa .pedido1 .titulo-pedido,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido2 .titulo-pedido,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido3 .titulo-pedido,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido4 .titulo-pedido,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido5 .titulo-pedido,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido6 .titulo-pedido,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido7 .titulo-pedido,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido8 .titulo-pedido,
-body .contenedor-pedidos .contenedor-hamburguesa .pedido9 .titulo-pedido {
+body main .contenedor-pedidos .contenedor-hamburguesa .pedido1 .titulo-pedido {
   color: rgb(237, 217, 0);
   justify-content: center;
   align-items: center;
@@ -387,7 +340,7 @@ body .contenedor-pedidos .contenedor-hamburguesa .pedido9 .titulo-pedido {
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "hamburguesa1   hamburguesa2    hamburguesa3" "hamburguesa4   hamburguesa5    hamburguesa6" "hamburguesa7   hamburguesa8    hamburguesa9";
   }
-  .contenedor-pedidos .contenedor-hamburguesa img {
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa img {
     width: 400px;
     height: 250px;
     border-radius: 10px;
@@ -434,61 +387,61 @@ body .contenedor-pedidos .contenedor-hamburguesa .pedido9 .titulo-pedido {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "hamburguesa1   hamburguesa2    hamburguesa3" "hamburguesa4    hamburguesa5    hamburguesa6" "hamburguesa7   hamburguesa8    hamburguesa9";
   }
-  .contenedor-pedidos img {
+  .contenedor-pedidos .contenedor-hamburguesa img {
     width: 350px;
     height: auto;
     border-radius: 10px;
   }
-  .contenedor-pedidos .hamburguesa1 {
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa1 {
     grid-area: hamburguesa1;
   }
-  .contenedor-pedidos .hamburguesa2 {
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa2 {
     grid-area: hamburguesa2;
   }
-  .contenedor-pedidos .hamburguesa3 {
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa3 {
     grid-area: hamburguesa3;
   }
-  .contenedor-pedidos .hamburguesa4 {
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa4 {
     grid-area: hamburguesa4;
   }
-  .contenedor-pedidos .hamburguesa5 {
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa5 {
     grid-area: hamburguesa5;
   }
-  .contenedor-pedidos .hamburguesa6 {
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa6 {
     grid-area: hamburguesa6;
   }
-  .contenedor-pedidos .hamburguesa7 {
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa7 {
     grid-area: hamburguesa7;
   }
-  .contenedor-pedidos .hamburguesa8 {
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa8 {
     grid-area: hamburguesa8;
   }
-  .contenedor-pedidos .hamburguesa9 {
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa9 {
     grid-area: hamburguesa9;
   }
-  .contenedor-pedidos .hamburguesa1,
-  .contenedor-pedidos .hamburguesa2,
-  .contenedor-pedidos .hamburguesa3,
-  .contenedor-pedidos .hamburguesa4,
-  .contenedor-pedidos .hamburguesa5,
-  .contenedor-pedidos .hamburguesa6,
-  .contenedor-pedidos .hamburguesa7,
-  .contenedor-pedidos .hamburguesa8,
-  .contenedor-pedidos .hamburguesa9 {
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa1,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa2,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa3,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa4,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa5,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa6,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa7,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa8,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa9 {
     display: grid;
     place-items: center;
     text-align: center;
     width: 100%;
   }
-  .contenedor-pedidos .hamburguesa1 .text-pedido,
-  .contenedor-pedidos .hamburguesa2 .text-pedido,
-  .contenedor-pedidos .hamburguesa3 .text-pedido,
-  .contenedor-pedidos .hamburguesa4 .text-pedido,
-  .contenedor-pedidos .hamburguesa5 .text-pedido,
-  .contenedor-pedidos .hamburguesa6 .text-pedido,
-  .contenedor-pedidos .hamburguesa7 .text-pedido,
-  .contenedor-pedidos .hamburguesa8 .text-pedido,
-  .contenedor-pedidos .hamburguesa9 .text-pedido {
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa1 .text-pedido,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa2 .text-pedido,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa3 .text-pedido,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa4 .text-pedido,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa5 .text-pedido,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa6 .text-pedido,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa7 .text-pedido,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa8 .text-pedido,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa9 .text-pedido {
     color: white;
     justify-content: center;
     align-items: center;
@@ -496,15 +449,15 @@ body .contenedor-pedidos .contenedor-hamburguesa .pedido9 .titulo-pedido {
     width: 350px;
     font-size: 15px;
   }
-  .contenedor-pedidos .hamburguesa1 .titulo-pedido,
-  .contenedor-pedidos .hamburguesa2 .titulo-pedido,
-  .contenedor-pedidos .hamburguesa3 .titulo-pedido,
-  .contenedor-pedidos .hamburguesa4 .titulo-pedido,
-  .contenedor-pedidos .hamburguesa5 .titulo-pedido,
-  .contenedor-pedidos .hamburguesa6 .titulo-pedido,
-  .contenedor-pedidos .hamburguesa7 .titulo-pedido,
-  .contenedor-pedidos .hamburguesa8 .titulo-pedido,
-  .contenedor-pedidos .hamburguesa9 .titulo-pedido {
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa1 .titulo-pedido,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa2 .titulo-pedido,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa3 .titulo-pedido,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa4 .titulo-pedido,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa5 .titulo-pedido,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa6 .titulo-pedido,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa7 .titulo-pedido,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa8 .titulo-pedido,
+  .contenedor-pedidos .contenedor-hamburguesa .hamburguesa9 .titulo-pedido {
     color: rgb(237, 217, 0);
     align-items: center;
     justify-content: center;
